@@ -1,0 +1,53 @@
+.header {
+  height: 111rem;
+  padding: 3rem 0;
+  background-color: $color-blue-main;
+  background-image: url(../img/header-img-mobile.png);
+  background-size: auto;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+
+  &__textbox {
+    width: 88%;
+    margin-left: 3rem;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__textbox p {
+    font-size: 2.1rem;
+    line-height: 4.5rem;
+    color: $color-blue-sub;
+  }
+}
+
+@include res(desktop) {
+  .header {
+    height: 76.8rem;
+    padding: 5rem 0 0 11rem;
+    background-image: url(../img/header-img-desktop.png);
+    background-size: auto;
+    background-position: 90% 500%;
+    background-repeat: no-repeat;
+
+    &__textbox {
+      width: 45%;
+      margin: 0;
+    }
+
+    &__img {
+      width: 12%;
+      margin: 0;
+    }
+
+    &__textbox p {
+      font-size: 2.4rem;
+    }
+
+    .btn {
+      margin: 0;
+    }
+  }
+}

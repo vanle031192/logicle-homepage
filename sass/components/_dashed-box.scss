@@ -1,0 +1,24 @@
+.dashed-box {
+  color: $color-blue-box;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px dashed $color-blue_border;
+  border-radius: 3rem;
+
+  & > p {
+    margin: 6% 7%;
+  }
+}
+
+@include res(desktop) {
+  .dashed-box {
+    width: 72%;
+
+    & > p {
+      font-size: 3.5rem;
+      font-weight: 600;
+      line-height: 4.8rem;
+      margin: 3.7% 4%;
+    }
+  }
+}

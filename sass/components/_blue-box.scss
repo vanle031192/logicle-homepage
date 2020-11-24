@@ -1,0 +1,16 @@
+.blue-box {
+  background-color: $color-bg-main__info;
+  background-image: url(../img/red-mark-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 0.1rem 3rem;
+  border-radius: 3rem;
+  color: $color-blue-box;
+
+  & > p {
+    margin: 6% 7%;
+  }
+
+  & span {
+    color: $color-red-main;
+  }
+}

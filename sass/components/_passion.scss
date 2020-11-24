@@ -1,0 +1,77 @@
+/* HIDDEN TOGGLE */
+.passion ul {
+  display: none;
+  text-align: center;
+  color: $color-white-main;
+}
+
+.passion ul:first-child {
+  display: block;
+  margin-bottom: 0;
+}
+
+.passion li {
+  list-style: none;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+  border-radius: 50%;
+}
+
+.passion li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.passion li:nth-child(1) {
+  background-color: $color-bg-circle_passion-1;
+  background-image: url(../img/an-uong-mobile.png);
+}
+
+.passion li:nth-child(2) {
+  background-color: $color-bg-circle_passion-2;
+  background-image: url(../img/tiec-tung-mobile.png);
+}
+
+.passion li:nth-child(3) {
+  background-color: $color-bg-circle_passion-3;
+  background-image: url(../img/vu-truong-mobile.png);
+}
+
+.passion li:nth-child(4) {
+  background-color: $color-bg-circle_passion-4;
+  background-image: url(../img/choi-game-mobile.png);
+}
+
+.ul--2 li:nth-child(1) {
+  background-image: url(../img/xem-phim.png);
+}
+
+.ul--2 li:nth-child(2) {
+  background-image: url(../img/hen-ho.png);
+}
+
+.ul--2 li:nth-child(3) {
+  background-image: url(../img/du-lich.png);
+}
+
+.ul--2 li:nth-child(4) {
+  background-image: url(../img/more.png);
+}
+
+@include res(desktop) {
+  .passion ul,
+  .passion ul:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8.5rem;
+  }
+
+  .passion ul:first-child {
+    margin-bottom: 5rem;
+  }
+
+  .passion li:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
