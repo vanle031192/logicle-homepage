@@ -1,0 +1,60 @@
+.brain-box {
+  .brain-group {
+    margin: 0 0.5rem;
+    background-color: $color-white-main;
+    background-repeat: no-repeat;
+    background-position: 2rem bottom;
+    box-shadow: 0.5rem 2rem 5rem rgba(16, 112, 177, 0.2);
+    border-radius: 1rem;
+
+    & * {
+      margin: 1.5rem 2rem;
+    }
+
+    @include res(desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 19.5rem;
+      background-position: 95% bottom;
+
+      & > p {
+        text-align: left;
+        margin: 0 3rem;
+      }
+
+      & > img {
+        height: 11rem;
+        margin: 1rem 1.5rem;
+      }
+    }
+  }
+
+  .brain--1 {
+    background-image: url(../img/one-number-mobile.png);
+    @include res(desktop) {
+      transform: translateX(2.5rem);
+    }
+  }
+  .brain--2 {
+    background-image: url(../img/two-number-mobile.png);
+    @include res(desktop) {
+      transform: translateX(-2.5rem);
+    }
+  }
+  .brain--3 {
+    background-image: url(../img/three-number-mobile.png);
+    @include res(desktop) {
+      transform: translateX(2.5rem);
+    }
+  }
+  .brain--4 {
+    background-image: url(../img/four-number-mobile.png);
+    @include res(desktop) {
+      transform: translateX(-2.5rem);
+    }
+  }
+  .brain--5 {
+    background-image: url(../img/five-number-mobile.png);
+  }
+}

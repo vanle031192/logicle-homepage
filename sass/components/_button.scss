@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  // width: 58.66666666666667%;
+  // min-width: 22rem;
+  max-width: 22rem;
+  padding: 1.5rem 0;
+
+  &--yellow {
+    color: $color-grey-1;
+    font-family: "SVN-Gilroy Bold", Roboto, sans-serif;
+    line-height: 2.6rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-btn_yellow;
+    box-shadow: 0.5rem 1rem 2rem rgba(53, 110, 173, 0.2);
+    border-radius: 2.8rem;
+  }
+}

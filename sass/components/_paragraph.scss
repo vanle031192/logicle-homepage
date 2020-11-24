@@ -1,0 +1,8 @@
+.paragraph {
+  color: $color-grey-1;
+  padding-left: 0.65rem;
+
+  & span {
+    color: $color-red-main;
+  }
+}
